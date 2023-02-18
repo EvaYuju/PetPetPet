@@ -54,6 +54,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="13dp"
+        android:textColor="@color/rosa1000"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/textViewTituloRegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,11 +69,13 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_cod"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvCodigo"
         app:layout_constraintTop_toBottomOf="@+id/textViewTituloRegistro"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/ptDNI"
@@ -82,11 +86,13 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_dni"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvDNI"
         app:layout_constraintTop_toBottomOf="@+id/ptSexo"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/ptSexo"
@@ -97,11 +103,13 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_sexo"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvSexo"
         app:layout_constraintTop_toBottomOf="@+id/ptNombre"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tvCodigo"
@@ -136,11 +144,13 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_nombre"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvNombre"
         app:layout_constraintTop_toBottomOf="@+id/ptCodigo"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tvRaza"
@@ -175,11 +185,13 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_raza"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvRaza"
         app:layout_constraintTop_toBottomOf="@+id/ptNombre"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/ptFecNac"
@@ -191,13 +203,14 @@
         android:background="@drawable/caja_texto_stylo1"
         android:ems="10"
         android:hint="@string/txt_fec"
-        android:inputType="date"
+        android:inputType="text"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/tvDNI"
         app:layout_constraintStart_toEndOf="@+id/tvFecNac"
         app:layout_constraintTop_toBottomOf="@+id/ptRaza"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnAlta"
@@ -262,6 +275,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConsul"
-        app:srcCompat="@drawable/kiri" />
+        app:srcCompat="@drawable/kiri"
+        android:contentDescription="@string/image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,7 @@
     <string name="btn_volver">Volver</string>
     <string name="label_usuario">Usuario</string>
     <string name="label_contrasena">Contraseña</string>
+    <string name="image">KiriLogo</string>
 
 
 </resources>
