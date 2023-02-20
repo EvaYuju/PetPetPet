@@ -16,9 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Crear la base de datos
-        dbHelper = DatabaseHelper(this)
+        dbHelper = DatabaseHelper(this, null)
 
-        // Insertar el usuario admin si no existe
         // Insertar el usuario admin si no existe
         if (!dbHelper.checkUser(ADMIN_USERNAME, ADMIN_PASSWORD)) {
             dbHelper.insertUsuario(usuario = ADMIN_USERNAME, contrasena = ADMIN_PASSWORD)
@@ -56,6 +55,8 @@ class MainActivity : AppCompatActivity() {
             }
 
         }//btnLogin
+
+
 
     }//onCreate
     override fun onDestroy() {

@@ -2,15 +2,15 @@ package com.ddi.petpetpet
 
 
 class Animal {
-    var codigo:Int=0
-    var nombre:String=""
-    var raza:String=""
-    var fecnac:String=""
-    var sexo:String=""
-    var dni:String=""
+    var codigo: String = ""
+    var nombre: String = ""
+    var raza: String = ""
+    var fecnac: String = ""
+    var sexo: String = ""
+    var dni: String = ""
 
     constructor(
-        codigo: Int,
+        codigo: String,
         nombre: String,
         raza: String,
         fecnac: String,
@@ -24,7 +24,12 @@ class Animal {
         this.sexo = sexo
         this.dni = dni
     }
+
+    constructor() {
+    }
+
 }
+
 /*class Animal(var codigo: Int, var nombre: String, var raza: String, var fecnac: String, var sexo: String) {
     override fun toString(): String {
         return "Código: $codigo, Nombre: $nombre, Raza: $raza, Fecha de nacimiento: $fecnac, Sexo: $sexo"
